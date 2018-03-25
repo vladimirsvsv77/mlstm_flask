@@ -1,1 +1,3 @@
-.__pycache__
+__pycache__
+ydf_demo_logs.txt
+*.pyc
