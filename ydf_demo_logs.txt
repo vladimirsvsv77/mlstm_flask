@@ -1,0 +1,80 @@
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+This is an excellent bank, just wonderful
+neutral or uncertain positive
+</response>
+<response>
+this is a bad bank
+neutral or uncertain positive
+</response>
+<response>
+this is a bad terrible bank
+neutral or uncertain positive
+</response>
+<response>
+this is a bad terrible bank
+neutral or uncertain positive
+</response>
+<response>
+this is a bad terrible bank
+neutral or uncertain positive
+</response>
+<response>
+this is a bad terrible bank
+neutral or uncertain positive
+</response>
+<response>
+it has a 3x optical zoom , which is average for these cameras .
+neutral or uncertain positive
+</response>
+<response>
+there were many times when i clicked the automatic shutter and nothing happens .
+neutral or uncertain positive
+</response>
+<response>
+mine is as easy to use as the mini without any firmware download .
+neutral or uncertain positive
+</response>
+<response>
+mine is as easy to use as the mini without any firmware download .
+ positive
+</response>
+<response>
+i was having intermittent problems with it losing connection .
+neutral or uncertain negative
+</response>
