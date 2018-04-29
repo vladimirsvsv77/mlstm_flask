@@ -4,7 +4,10 @@ from codecs import open
 import time
 from flask import Flask, render_template, request, jsonify
 import rake
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)
 
 
 print ("Preparing classifier")
