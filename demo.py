@@ -36,9 +36,9 @@ def index_page(text="", prediction_message=""):
 def api(text="", prediction_message=""):
     if request.method == "GET":
         text = request.args.get('text')
-        prediction_message, score = classifier.get_prediction_message(text)
+        prediction_message, class_pred, score = classifier.get_prediction_message(text)
         
-    return jsonify({'score': score}) 
+    return jsonify({'class_pred': class_pred, 'score': str(score)}) 
 
 
 @app.route("/keywords-api", methods=["GET"])

@@ -47,5 +47,6 @@ class SentimentClassifier(object):
     def get_prediction_message(self, text):
         prediction = self.predict_text(text)
         class_prediction = prediction[0]
+        score_prediction = prediction[1]
         prediction_probability = prediction[1]
-        return [self.get_probability_words(prediction_probability) + " " + self.classes_dict[class_prediction], class_prediction]
+        return [self.get_probability_words(prediction_probability) + " " + self.classes_dict[class_prediction], class_prediction, score_prediction]
