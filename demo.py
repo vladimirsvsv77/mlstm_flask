@@ -2,14 +2,18 @@ __author__ = 'VladimirSveshnikov'
 from sentiment_classifier import SentimentClassifier
 from codecs import open
 import time
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
+import rake
 app = Flask(__name__)
+
 
 print ("Preparing classifier")
 start_time = time.time()
 classifier = SentimentClassifier()
 print ("Classifier is ready")
 print (time.time() - start_time, "seconds")
+rake_object = rake.Rake("SmartStoplist.txt")
+
 
 @app.route("/sentiment-demo", methods=["POST", "GET"])
 def index_page(text="", prediction_message=""):
@@ -26,6 +30,24 @@ def index_page(text="", prediction_message=""):
         logfile.close()
 		
     return render_template('hello.html', text=text, prediction_message=prediction_message)
+
+
+@app.route("/sentiment-api", methods=["GET"])
+def api(text="", prediction_message=""):
+    if request.method == "GET":
+        text = request.args.get('text')
+        prediction_message, score = classifier.get_prediction_message(text)
+        
+    return jsonify({'score': score}) 
+
+
+@app.route("/keywords-api", methods=["GET"])
+def keywords(text="", prediction_message=""):
+    if request.method == "GET":
+        text = request.args.get('text')
+        keywords = rake_object.run(text)
+        
+    return jsonify({'keywords': keywords}) 
 
 
 if __name__ == "__main__":
