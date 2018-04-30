@@ -55,3 +55,7 @@ def keywords(text="", prediction_message=""):
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80, debug=False)
+    
+    # run with ssl
+    # openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
+    # app.run(host='0.0.0.0', port=80, debug=False, ssl_context=('cert.pem', 'key.pem')) 
