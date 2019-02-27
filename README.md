@@ -1,7 +1,8 @@
 # Sentiment Neuron deminstration on Flask
 
-Requires flask, tensorflow, numpy, pandas, sklearn and python 3.5
-A detailed description of the model used here: [https://github.com/openai/generating-reviews-discovering-sentiment](https://github.com/openai/generating-reviews-discovering-sentiment)
+Requires flask, tensorflow, numpy, pandas, sklearn and python 3.5.
+
+A detailed description of the model is here: [https://github.com/openai/generating-reviews-discovering-sentiment](https://github.com/openai/generating-reviews-discovering-sentiment)
 
 ## Usage
 
